@@ -1,0 +1,2 @@
+# Ignore the auto-generated NodeCommand config
+.ebextensions/

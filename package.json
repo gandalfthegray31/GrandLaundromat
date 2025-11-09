@@ -1,0 +1,32 @@
+{
+  "name": "laundromat-website",
+  "version": "1.0.0",
+  "description": "Self Service Laundromat website with service scheduling",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "laundromat",
+    "laundry",
+    "wash-and-fold",
+    "pickup-delivery"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "@aws-sdk/client-secrets-manager": "^3.490.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+
