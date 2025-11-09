@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for your service request - Self Service Laundromat">
+    <title>Thank You - Self Service Laundromat</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K107CTDRXY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K107CTDRXY');
+        
+        // Track conversion event
+        gtag('event', 'conversion', {
+            'send_to': 'G-K107CTDRXY',
+            'event_category': 'form',
+            'event_label': 'service_request_submitted'
+        });
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .thank-you-container {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: var(--bg-light);
+        }
+        .thank-you-card {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            max-width: 600px;
+            border: 1px solid var(--border-color);
+        }
+        .thank-you-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+        .thank-you-card h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        .thank-you-card p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        .thank-you-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        .btn-secondary:hover {
+            background: var(--bg-light);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Self Service Laundromat</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#schedule">Schedule</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="thank-you-container">
+        <div class="thank-you-card">
+            <div class="thank-you-icon">✓</div>
+            <h1>Thank You!</h1>
+            <p>Your service request has been received successfully. We will contact you shortly to confirm your booking.</p>
+            <p>If you have any questions, please don't hesitate to reach out to us at <a href="tel:+19452209202" style="color: var(--primary-color);">(945) 220-9202</a>.</p>
+            <div class="thank-you-actions">
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+                <a href="index.html#schedule" class="btn btn-secondary">Schedule Another Service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Self Service Laundromat. All rights reserved.</p>
+            <p>4722 E Grand Ave, Dallas, TX 75223</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

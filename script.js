@@ -154,12 +154,8 @@ scheduleForm.addEventListener('submit', async (e) => {
         const result = await response.json();
         
         if (response.ok) {
-            showMessage('Thank you! Your service request has been received. We will contact you shortly to confirm your booking.', 'success');
-            scheduleForm.reset();
-            // Reset form visibility
-            loadSizeGroup.style.display = 'none';
-            pickupAddressGroup.style.display = 'none';
-            pickupDateGroup.style.display = 'block';
+            // Redirect to thank you page
+            window.location.href = 'thank-you.html';
         } else {
             showMessage(result.error || 'Something went wrong. Please try again later.', 'error');
         }

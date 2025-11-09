@@ -246,6 +246,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+// Serve the thank you page
+app.get('/thank-you.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'thank-you.html'));
+});
+
 // Start server
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
